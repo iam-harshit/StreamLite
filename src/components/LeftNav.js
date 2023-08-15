@@ -5,7 +5,7 @@ import { categories } from "../utils/constant";
 import { Context } from "../context/contextApi";
 
 const LeftNav = () => {
-  const { selectedCategory, setSelectedCategory, mobileMenu } =
+  const { selectCategory, setSelectCategory, mobileMenu } =
     useContext(Context);
 
   const navigate = useNavigate();
@@ -13,9 +13,9 @@ const LeftNav = () => {
   const clickHandler = (name, type) => {
     switch (type) {
       case "category":
-        return setSelectedCategory(name);
+        return setSelectCategory(name);
       case "home":
-        return setSelectedCategory(name);
+        return setSelectCategory(name);
       case "menu":
         return false;
       default:
@@ -25,9 +25,7 @@ const LeftNav = () => {
 
   return (
     <div
-      className={`md:block w-[240px] overflow-y-auto h-full py-4 bg-black absolute md:relative z-10 translate-x-[-240px] md:translate-x-0 transition-all ${
-        mobileMenu ? "translate-x-0" : ""
-      }`}
+      className={`md:block w-[240px] overflow-y-auto h-full py-4 bg-black absolute md:relative z-10 translate-x-[-240px] md:translate-x-0 transition-all ${mobileMenu ? "translate-x-1" : ""}`}
     >
       <div className="flex px-5 flex-col">
         {categories.map((item) => {
@@ -41,7 +39,7 @@ const LeftNav = () => {
                   navigate("/");
                 }}
                 className={`${
-                  selectedCategory === item.name ? "bg-white/[0.15]" : ""
+                  selectCategory === item.name ? "bg-white/[0.15]" : ""
                 }`}
               />
               {item.divider && <hr className="my-5 border-white/[0.2]" />}
