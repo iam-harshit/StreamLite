@@ -42,7 +42,7 @@ Follow these steps to get StreamLite up and running:
 3. **Setup Environment Variables:**
    - Create a .env file in the root directory.
    - Goto [Rapid API](https://rapidapi.com/hub) and subscribe YouTube API.
-   - Add your API keys and other environment-specific variables.
+   - Add your API key in **/src/utils/api.js**
      
 4. **Run the App**:
     ```bash
