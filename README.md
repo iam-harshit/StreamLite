@@ -13,15 +13,15 @@ StreamLite isn't just another streaming web app. Designed with React, it promise
 ## Features ✨
 Here's what makes StreamLite stand out:
 
-- **Responsive Design**: Ensuring a smooth experience on all devices, be it desktop, tablet, or mobile.
+- **Responsive Design** - Ensuring a smooth experience on all devices, be it desktop, tablet, or mobile.
   
-- **Live API Integration**: Dynamic content pulled from a reliable live API for the most up-to-date video streams.
+- **Live API Integration** - Dynamic content pulled from a reliable live API for the most up-to-date video streams.
 
-- **Diverse Categories**: Easily find what you're looking for, thanks to our sorted video categories like home, trending, music, sports, etc.
+- **Diverse Categories** - Easily find what you're looking for, thanks to our sorted video categories like home, trending, music, sports, etc.
   
-- **Optimized Search**: A powerful search feature that fetches results in the blink of an eye.
+- **Optimized Search** - A powerful search feature that fetches results in the blink of an eye.
 
-- **Interactive Video Player**: Our player provides options like speed adjustment, quality selection, and full-screen mode.
+- **Interactive Video Player** - Our player provides options like speed adjustment, quality selection, and full-screen mode.
 
 ## Installation 🔧
 Follow these steps to get StreamLite up and running:
